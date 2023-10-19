@@ -1,19 +1,181 @@
 * {
-    box-sizing: border-box;     /*применяется для изменения алгоритма расчёта ширины и высоты элемента. ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border).*/
-    padding: 0;     /* позволяет задать величину поля сразу для всех сторон элемента или определить поля только для указанных сторон. */
-    margin: 0;   /*позволяет контейнеру обрезать поля своих дочерних элементов там, где они примыкают к краям контейнера.*/
-    border: 0;  /* Толщина рамки задаётся свойством border, при этом если указано border: 0, то рамка не выводится. При других значениях border рисунок всегда имеет приоритет. */
-}    
+  box-sizing: border-box; /*применяется для изменения алгоритма расчёта ширины и высоты элемента. ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border).*/
+  padding: 0; /* позволяет задать величину поля сразу для всех сторон элемента или определить поля только для указанных сторон. */
+  margin: 0; /*позволяет контейнеру обрезать поля своих дочерних элементов там, где они примыкают к краям контейнера.*/
+  border: 0; /* Толщина рамки задаётся свойством border, при этом если указано border: 0, то рамка не выводится. При других значениях border рисунок всегда имеет приоритет. */
+}
 body {
-    height: 100%;
-    font-family: 'League Spartan', sans-serif;  /*устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
-}    
+  height: 100%;
+  background-color: black;
+  font-family: "League Spartan", sans-serif; /*устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+}
 img {
-    max-width: 100%;    /* устанавливает максимальную ширину элемента. */
-}    
+  max-width: 100%; /* устанавливает максимальную ширину элемента. */
+}
 a {
-    text-decoration: none;  /* устанавливает внешний вид декоративных линий в тексте. */
-}    
+  text-decoration: none; /* устанавливает внешний вид декоративных линий в тексте. */
+}
 ul li {
-    list-style: none;   /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
+  list-style: none; /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
+}
+.wrapper {
+  max-width: 1920px;
+  /* background-color: #F8F8F8;    */
+}
+.main {
+  /* width: 1440px; */
+  height: 943px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+}
+.text__title {
+  width: 135px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+}
+.head__title {
+  width: 888px;
+  height: 215px;
+  flex-shrink: 0;
+  color: #272727;
+  font-size: 250px;
+  font-weight: 300;
+  line-height: normal;
+}
+.info__title {
+  width: 575px;
+  height: 142px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+}
+.gallery__item {
+  width: 408px;
+  height: 720px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.products__button {
+  width: 131px;
+  height: 21px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: normal;
+}
+.products__price {
+  width: 88px;
+  height: 38px;
+  flex-shrink: 0;
+  color: #272727;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 186%;
+}
+.content {
+  /* width: 1440px; */
+  height: 3629px;
+  background: #fff;
+}
+.content__text {
+  width: 171px;
+  height: 41px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+}
+.content__title {
+  width: 285px;
+  height: 62px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 112.5%;
+}
+.gallery__img {
+  width: 286px;
+  height: 410px;
+  flex-shrink: 0;
+  background: url(<path-to-image>),
+    lightgray -67px 0px / 143.357% 100% no-repeat;
+}
+.name__watch {
+  width: 285px;
+  height: 27px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
+.watch__info {
+  width: 532px;
+  height: 194px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+}
+.gallery__img {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+  background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+}
+.name__watch {
+  width: 285px;
+  height: 27px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
+.watch__info {
+  width: 510px;
+  height: 196px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 155%;
+}
+.product__description {
+  width: 972px;
+  height: 50px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 186%;
+  text-transform: capitalize;
+}
+.info__content {
+  width: 515px;
+  height: 231px;
+  flex-shrink: 0;
+  color: var(--, #161515);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%;
 }
