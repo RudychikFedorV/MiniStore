@@ -8,6 +8,9 @@ body {
   height: 100%;
   background-color: black;
   font-family: "League Spartan", sans-serif; /*устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 img {
   max-width: 100%; /* устанавливает максимальную ширину элемента. */
@@ -19,66 +22,75 @@ ul li {
   list-style: none; /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
 }
 .wrapper {
-  max-width: 1920px;
-  /* background-color: #F8F8F8;    */
+  max-width: 1440px;
+  margin: auto;  
 }
 .main {
-  /* width: 1440px; */
-  height: 943px;
-  flex-shrink: 0;
   background-color: #f8f8f8;
+  /* max-width: 1440px; */
+}
+.gallery__item {
+  display: flex;
+  position: absolute;
+  flex-shrink: 0;
+  max-width: 408px;
+  max-height: 720px;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+  margin: 4px 240px 219px 792px;
 }
 .text__title {
-  width: 135px;
-  height: 32px;
-  flex-shrink: 0;
+  max-width: 135px;
   color: var(--, #161515);
   font-size: 24px;
   font-weight: 300;
   line-height: 186%;
+  padding-top: 104px;
+  padding-left: 133px;
+  margin-bottom: 53px;
 }
 .head__title {
-  width: 888px;
-  height: 215px;
-  flex-shrink: 0;
+  max-width: 888px;
   color: #272727;
   font-size: 250px;
   font-weight: 300;
   line-height: normal;
+  padding-left: 133px;
+  margin: 0;
+  margin-bottom: 43px;
 }
 .info__title {
-  width: 575px;
-  height: 142px;
-  flex-shrink: 0;
+  max-width: 725px;
   color: var(--, #161515);
   font-size: 32px;
   font-weight: 300;
   line-height: 155%;
-}
-.gallery__item {
-  width: 408px;
-  height: 720px;
-  flex-shrink: 0;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  padding-left: 135px;
+  margin-bottom: 87px;
 }
 .products__button {
-  width: 131px;
-  height: 21px;
-  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  /* gap: 38px; */
+  padding-left: 135px;
+  margin-bottom: 246px;
+}
+.btn__primary {
+  background-color: #161515;
   color: #fff;
   font-size: 32px;
+  font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  padding: 35px 75px 35px 75px;
 }
 .products__price {
-  width: 88px;
-  height: 38px;
-  flex-shrink: 0;
+  display: flex;
   color: #272727;
   text-align: center;
   font-size: 32px;
   font-weight: 300;
-  line-height: 186%;
+  background: #fff;
+  box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
+  padding: 35px 75px 35px 75px;
 }
 .content {
   /* width: 1440px; */
