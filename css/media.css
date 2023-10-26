@@ -1,18 +1,12 @@
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .gallery__item {
-    display: flex;
-    position: absolute;
-    flex-shrink: 0;
-    width: 360px;
+    max-width: 360px;
     margin: 4px 240px 219px 792px;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .gallery__item {
-    display: flex;
-    position: absolute;
-    flex-shrink: 0;
-    width: 320px;
+    max-width: 320px;
     margin: 4px 65px 0px 607px;
   }
   .text__title,
@@ -22,13 +16,10 @@
     padding-left: 65px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .gallery__item {
-    display: flex;
-    position: absolute;
-    flex-shrink: 0;
-    width: 260px;
-    margin: 4px 35px 0px 473px;
+    max-width: 260px;
+    margin: 4px 35px 0px 473px;    
   }
   .text__title,
   .head__title,
@@ -40,16 +31,13 @@
     max-width: 520px;
   }
   .product__description {
-    width: 520px;
+    max-width: 520px;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .gallery__item {
-    display: flex;
-    position: absolute;
-    flex-shrink: 0;
-    width: 260px;
-    margin: 4px 25px 0px 291px;
+    max-width: 260px;
+    margin: 0px 0px 0px 310px;
   }
   .info__title {
     max-width: 320px;
@@ -59,5 +47,53 @@
   .info__title,
   .products__button {
     padding-left: 25px;
+  }
+  .product__description {
+    max-width: 520px;
+  }
+}
+@media (max-width: 575px) {
+  .gallery__item {
+    max-width: 260px;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  .text__title,
+  .head__title,
+  .info__title,
+  .products__button {
+    padding: 0px 25px 0px 25px;
+  }
+  .products__button {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  } 
+  .watch__info-1 {
+    padding: 0px 25px 0px 25px;
+    max-width: 360px;
+    font-size: 28px;
+  }
+  .gallery__img-2 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .watch__info-2 {
+    max-width: 360px;
+    font-size: 28px;
+    padding: 0px 25px 0px 25px;
+  }
+  .product__description {
+    max-width: 360px;
+  }
+  .info__content {
+    max-width: 360px;
+    font-size: 28px;
+    padding: 0px 25px 0px 25px;
+  }
+  .link__seconary {
+    padding-bottom: 100px;
   }
 }
