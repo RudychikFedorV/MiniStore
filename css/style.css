@@ -1,28 +1,28 @@
 * {
-  box-sizing: border-box; /*применяется для изменения алгоритма расчёта ширины и высоты элемента. ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border).*/
-  padding: 0; /* позволяет задать величину поля сразу для всех сторон элемента или определить поля только для указанных сторон. */
-  margin: 0; /*позволяет контейнеру обрезать поля своих дочерних элементов там, где они примыкают к краям контейнера.*/
-  border: 0; /* Толщина рамки задаётся свойством border, при этом если указано border: 0, то рамка не выводится. При других значениях border рисунок всегда имеет приоритет. */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  border: 0;
 }
 body {
   height: 100%;
   background: #F8F8F8;
-  font-family: "League Spartan", sans-serif; /*устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+  font-family: "League Spartan", sans-serif; 
 }
 img {
-  max-width: 100%; /* устанавливает максимальную ширину элемента. */
+  max-width: 100%; 
   height: auto;
   object-fit: cover;
 }
 a {
-  text-decoration: none; /* устанавливает внешний вид декоративных линий в тексте. */
+  text-decoration: none; 
 }
 ul li {
-  list-style: none; /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
+  list-style: none; 
 }
 .wrapper {
   max-width: 1440px;
-  margin: auto;
+  margin-inline: auto;
 }
 .main {
   background-color: #f8f8f8;
@@ -74,7 +74,7 @@ ul li {
   color: #fff;
   font-size: 32px;
   font-weight: 300;
-  padding: 26px 75px 26px 75px;
+  padding: 26px 50px;
   animation: render 5s ease-in-out infinite;
   transition: 1s all ease-in-out;
 }

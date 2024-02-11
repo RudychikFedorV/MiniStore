@@ -19,7 +19,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .gallery__item {
     max-width: 260px;
-    margin: 4px 35px 0px 473px;    
+    margin: 4px 35px 0px 473px;
   }
   .text__title,
   .head__title,
@@ -35,6 +35,9 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .wrapper {
+    margin-inline: auto;
+  }
   .gallery__item {
     max-width: 260px;
     margin: 0px 0px 0px 310px;
@@ -46,7 +49,7 @@
   .head__title,
   .info__title,
   .products__button {
-    padding-left: 25px;
+    padding: 0;
   }
   .product__description {
     max-width: 520px;
@@ -54,11 +57,12 @@
 }
 @media (max-width: 575px) {
   .gallery__item {
-    max-width: 260px;
+    max-width: 300px;
     display: flex;
+    justify-content: center;
     position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: auto;
+
     margin-bottom: 50px;
   }
   .text__title,
@@ -70,7 +74,7 @@
   .products__button {
     justify-content: center;
     flex-wrap: wrap-reverse;
-  } 
+  }
   .watch__info-1 {
     padding: 0px 25px 0px 25px;
     max-width: 360px;
